@@ -5,21 +5,33 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gabriel Teles | Consultoria Online de Performance</title>
 <meta name="description" content="Consultoria online individualizada de força e condicionamento para quem quer evoluir de verdade no esporte. Com Gabriel Teles, preparador físico e triatleta.">
-<meta name="theme-color" content="#0b0c0b">
+<meta name="theme-color" content="#0C1A23">
 <meta property="og:title" content="Gabriel Teles | Consultoria Online de Performance">
 <meta property="og:description" content="Sua performance começa fora da zona de conforto. Consultoria online individualizada.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="assets/gabriel.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script>
+  document.documentElement.className += " js";
+  // Failsafe: never leave the hero hidden if scripts fail
+  setTimeout(function(){ document.documentElement.className += " ready"; }, 2800);
+</script>
 </head>
 <body>
 
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+<!-- Barra de zonas: preenche com o scroll -->
+<div class="zbar" aria-hidden="true">
+  <i></i><i></i><i></i><i></i><i></i>
+</div>
+
 <header class="nav" id="nav">
   <div class="wrap nav__in">
-    <a href="#topo" class="brand" aria-label="Gabriel Teles, início">GABRIEL <span>TELES</span></a>
+    <a href="#topo" class="brand">Gabriel Teles</a>
     <nav class="nav__links" aria-label="Seções">
       <a href="#metodo">Como funciona</a>
       <a href="#equipe">Equipe</a>
@@ -30,77 +42,83 @@
   </div>
 </header>
 
-<main id="topo">
+<main id="conteudo">
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero" id="topo">
   <div class="wrap hero__grid">
     <div class="hero__text">
-      <p class="eyebrow">Força e condicionamento · Preparador físico · Triatleta</p>
-      <h1>Sua performance <em>começa fora da zona de conforto.</em></h1>
-      <p class="lead">Consultoria online individualizada para quem quer evoluir de verdade no esporte. Treino pensado para a sua rotina, acompanhado de perto.</p>
-      <div class="hero__cta">
-        <a class="btn" data-wa="Olá Gabriel! Quero começar a consultoria online de performance." href="#">Quero começar</a>
-        <a class="link" href="#planos">Ver planos <span aria-hidden="true">→</span></a>
+      <p class="hero__who">Gabriel Teles · Força e condicionamento · Preparador físico e triatleta</p>
+      <h1 data-split="hero">Sua performance começa fora da zona de conforto.</h1>
+      <p class="lead hero__in">Consultoria online individualizada para quem quer evoluir de verdade no esporte. Treino pensado para a sua rotina, acompanhado de perto.</p>
+      <div class="hero__cta hero__in">
+        <a class="btn magnetic" data-wa="Olá Gabriel! Quero começar a consultoria online de performance." href="#">Quero começar</a>
+        <a class="link" href="#planos">Ver planos</a>
       </div>
     </div>
-    <figure class="hero__photo">
+    <figure class="hero__photo" id="heroPhoto">
       <img src="assets/gabriel.jpg" alt="Gabriel Teles, preparador físico e triatleta" width="1000" height="1499" fetchpriority="high">
       <figcaption><strong>Gabriel Teles</strong>Direção técnica e estratégia do treinamento</figcaption>
     </figure>
   </div>
-  <div class="wrap">
-    <ul class="facts">
-      <li><strong>+5 anos</strong><span>ajudando atletas a evoluir</span></li>
-      <li><strong>Semanal</strong><span>feedback com o treinador</span></li>
-      <li><strong>100%</strong><span>individualizado</span></li>
-      <li><strong>Sem multa</strong><span>no cancelamento</span></li>
-    </ul>
+
+  <div class="wrap hero__zones hero__in">
+    <div class="zones" aria-hidden="true">
+      <div class="zones__bar"><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="zones__names"><span>Z1 Recuperação</span><span>Z2 Conforto</span><span>Z3 Ritmo</span><span>Z4 Limiar</span><span>Z5 Máximo</span></div>
+      <div class="zones__marker" id="marker"><b id="markerLabel">Você hoje</b></div>
+    </div>
+    <p class="zones__cap">Evoluir é sair do conforto com método, na dose certa para você.</p>
+  </div>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Força</span><span>Condicionamento</span><span>Corrida de rua</span><span>Triathlon</span><span>Prevenção de lesões</span><span>Recuperação</span>
+      <span>Força</span><span>Condicionamento</span><span>Corrida de rua</span><span>Triathlon</span><span>Prevenção de lesões</span><span>Recuperação</span>
+    </div>
   </div>
 </section>
 
 <!-- PROBLEMA -->
-<section class="sec sec--light" id="problema">
-  <div class="wrap split">
-    <div class="reveal">
-      <p class="eyebrow eyebrow--dark">O problema</p>
-      <h2>Não é falta de esforço. <em>É falta de estratégia.</em></h2>
-      <p class="muted">Performance não é treinar mais. É treinar com estratégia.</p>
-    </div>
-    <div class="reveal">
-      <p class="small-title">A maioria das pessoas</p>
-      <ul class="list">
-        <li>Treina muito e evolui pouco</li>
-        <li>Sente dores constantemente</li>
-        <li>Vive cansada</li>
-        <li>Não sabe equilibrar treino e recuperação</li>
-        <li>Copia treinos genéricos da internet</li>
-        <li>Não entende como organizar força, cardio e performance</li>
-      </ul>
-      <p class="result">O resultado: <b>estagnação</b>, <b>lesões</b> e <b>frustração</b>, com a sensação de estar sempre treinando errado.</p>
+<section class="sec sec--dark problem" id="problema">
+  <div class="wrap">
+    <h2 class="statement" id="statement">Treinar muito e evoluir pouco não é falta de esforço. É falta de estratégia. Performance não é treinar mais. É treinar com estratégia.</h2>
+
+    <div class="problem__grid">
+      <div>
+        <h3 class="mini">A maioria das pessoas</h3>
+        <ul class="lines" id="symptoms">
+          <li>Treina muito e evolui pouco</li>
+          <li>Sente dores constantemente</li>
+          <li>Vive cansada</li>
+          <li>Não sabe equilibrar treino e recuperação</li>
+          <li>Copia treinos genéricos da internet</li>
+          <li>Não entende como organizar força, cardio e performance</li>
+        </ul>
+      </div>
+      <p class="result">O resultado é estagnação, lesões e frustração, com a sensação de estar sempre treinando errado.</p>
     </div>
   </div>
 </section>
 
 <!-- SOLUÇÃO -->
-<section class="sec" id="solucao">
+<section class="sec sec--chalk" id="solucao">
   <div class="wrap">
-    <div class="head reveal">
-      <p class="eyebrow">A consultoria</p>
-      <h2>Cada atleta é diferente. <em>O treino também.</em></h2>
+    <div class="head">
+      <h2 data-split>Cada atleta é diferente. O treino também.</h2>
       <p class="muted">Rotina, histórico, nível físico, limitações e objetivos específicos. Por isso a consultoria é construída de forma totalmente individualizada.</p>
     </div>
-    <div class="cols reveal">
-      <div class="col col--no">
-        <h3>Aqui não tem</h3>
+    <div class="duo">
+      <div class="duo__no">
+        <h3 class="mini">Aqui não tem</h3>
         <ul>
-          <li>Planilhas prontas</li>
-          <li>Treinos aleatórios</li>
-          <li>Excesso de volume sem propósito</li>
+          <li><span class="strike">Planilhas prontas</span></li>
+          <li><span class="strike">Treinos aleatórios</span></li>
+          <li><span class="strike">Excesso de volume sem propósito</span></li>
         </ul>
       </div>
-      <div class="col col--yes">
-        <h3>Aqui o foco é</h3>
+      <div class="duo__yes">
+        <h3 class="mini">Aqui o foco é</h3>
         <ul>
           <li>Performance</li>
           <li>Consistência</li>
@@ -113,30 +131,31 @@
 </section>
 
 <!-- COMO FUNCIONA -->
-<section class="sec sec--alt" id="metodo">
-  <div class="wrap">
-    <div class="head reveal">
-      <p class="eyebrow">Como funciona</p>
-      <h2>Quatro etapas, <em>do primeiro dia ao resultado.</em></h2>
+<section class="sec sec--dark" id="metodo">
+  <div class="wrap method">
+    <div class="method__head">
+      <h2 data-split>Como funciona</h2>
+      <p class="muted">Quatro etapas, do primeiro dia ao resultado.</p>
     </div>
-    <ol class="steps">
-      <li class="reveal">
-        <span class="num">01</span>
+    <ol class="tl" id="timeline">
+      <span class="tl__rail" aria-hidden="true"><i class="tl__fill" id="tlFill"></i></span>
+      <li class="step">
+        <span class="step__n" aria-hidden="true">1</span>
         <h3>Avaliação inicial</h3>
         <p>Entendemos sua rotina, histórico, objetivos, disponibilidade e nível atual.</p>
       </li>
-      <li class="reveal">
-        <span class="num">02</span>
+      <li class="step">
+        <span class="step__n" aria-hidden="true">2</span>
         <h3>Planejamento individualizado</h3>
         <p>Seu treino é organizado de acordo com objetivo, modalidade, rotina, fase da temporada e recuperação.</p>
       </li>
-      <li class="reveal">
-        <span class="num">03</span>
+      <li class="step">
+        <span class="step__n" aria-hidden="true">3</span>
         <h3>Acompanhamento constante</h3>
         <p>Ajustes de treino, suporte da equipe, monitoramento da evolução e organização da rotina.</p>
       </li>
-      <li class="reveal">
-        <span class="num">04</span>
+      <li class="step">
+        <span class="step__n" aria-hidden="true">4</span>
         <h3>Plataforma completa</h3>
         <p>Acesso a vídeos explicativos, treino organizado, acompanhamento online e a evolução do seu processo.</p>
       </li>
@@ -145,20 +164,19 @@
 </section>
 
 <!-- EQUIPE -->
-<section class="sec" id="equipe">
+<section class="sec sec--chalk" id="equipe">
   <div class="wrap">
-    <div class="head reveal">
-      <p class="eyebrow">Quem vai te acompanhar</p>
-      <h2>Uma equipe estruturada <em>para você evoluir.</em></h2>
-      <p class="muted">Nosso objetivo: fazer você evoluir com constância, segurança e estratégia.</p>
+    <div class="head">
+      <h2 data-split>Quem vai te acompanhar</h2>
+      <p class="muted">Uma equipe estruturada para você evoluir com constância, segurança e estratégia.</p>
     </div>
 
-    <article class="person reveal">
-      <img src="assets/gabriel.jpg" alt="Gabriel Teles" width="1000" height="1499" loading="lazy">
-      <div>
+    <article class="person">
+      <div class="ph"><img src="assets/gabriel.jpg" alt="Gabriel Teles" width="1000" height="1499" loading="lazy"></div>
+      <div class="person__body">
         <p class="role">Direção técnica e estratégia do treinamento</p>
         <h3>Gabriel Teles</h3>
-        <p class="sub">Personal trainer · Preparador físico · Triatleta</p>
+        <p class="sub">Personal trainer, preparador físico e triatleta</p>
         <p>Especialista em treinamento de força e condicionamento físico voltado para performance esportiva. Há mais de 5 anos ajuda atletas e praticantes de diferentes modalidades a melhorar a performance, desenvolver força e condicionamento e reduzir o risco de lesões.</p>
         <ul class="creds">
           <li>Educação Física, UFMG</li>
@@ -173,12 +191,12 @@
       </div>
     </article>
 
-    <article class="person person--rev reveal">
-      <img src="assets/clara.jpg" alt="Clara, preparadora física" width="800" height="1114" loading="lazy">
-      <div>
+    <article class="person person--rev">
+      <div class="ph"><img src="assets/clara.jpg" alt="Clara, preparadora física" width="800" height="1114" loading="lazy"></div>
+      <div class="person__body">
         <p class="role">Preparadora física e acompanhamento técnico</p>
         <h3>Clara</h3>
-        <p class="sub">Preparadora física · Endurance · Educação Física</p>
+        <p class="sub">Preparadora física, endurance e educação física</p>
         <p>Graduada em Educação Física pela PUC Minas, com formação complementar internacional em Desporto pelo Instituto Politécnico de Bragança (Portugal). Além da vivência prática no triathlon e na musculação, participou de estágios e projetos ligados ao esporte de rendimento, natação competitiva e monitoramento fisiológico esportivo.</p>
         <ul class="creds">
           <li>Educação Física, PUC Minas</li>
@@ -192,7 +210,7 @@
       </div>
     </article>
 
-    <div class="job reveal">
+    <div class="job">
       <div>
         <p class="role">Organização operacional e suporte ao aluno</p>
         <h3>Job</h3>
@@ -200,7 +218,7 @@
       <p>Cuida da parte operacional para que você tenha suporte rápido e tudo organizado durante todo o processo.</p>
     </div>
 
-    <ul class="diffs reveal">
+    <ul class="diffs">
       <li>Acompanhamento próximo</li>
       <li>Ajustes constantes</li>
       <li>Comunicação rápida</li>
@@ -211,77 +229,75 @@
 </section>
 
 <!-- PLANOS -->
-<section class="sec sec--light" id="planos">
+<section class="sec sec--dark" id="planos">
   <div class="wrap">
-    <div class="head reveal">
-      <p class="eyebrow eyebrow--dark">Investimento</p>
-      <h2>Escolha o plano <em>que cabe na sua rotina.</em></h2>
+    <div class="head">
+      <h2 data-split>Escolha o plano que cabe na sua rotina</h2>
       <p class="muted">Consultoria Performance com Gabriel Teles. Quanto maior o compromisso, menor a mensalidade.</p>
     </div>
 
-    <div class="plans reveal">
+    <div class="plans">
       <article class="plan">
-        <p class="plan__name">Trimestral</p>
-        <p class="price"><small>R$</small>277<span>/mês</span></p>
+        <h3>Trimestral</h3>
+        <p class="price"><small>R$</small><b data-to="277">277</b><span>/mês</span></p>
         <p class="plan__note">Para começar e sentir o método.</p>
-        <a class="btn btn--dark" data-wa="Olá Gabriel! Tenho interesse no plano Trimestral da consultoria (R$ 277/mês)." href="#">Quero este plano</a>
+        <a class="btn btn--line" data-wa="Olá Gabriel! Tenho interesse no plano Trimestral da consultoria (R$ 277/mês)." href="#">Quero este plano</a>
       </article>
       <article class="plan">
-        <p class="plan__name">Semestral</p>
-        <p class="price"><small>R$</small>247<span>/mês</span></p>
+        <h3>Semestral</h3>
+        <p class="price"><small>R$</small><b data-to="247">247</b><span>/mês</span></p>
         <p class="plan__note">Tempo para evoluir com constância.</p>
-        <a class="btn btn--dark" data-wa="Olá Gabriel! Tenho interesse no plano Semestral da consultoria (R$ 247/mês)." href="#">Quero este plano</a>
+        <a class="btn btn--line" data-wa="Olá Gabriel! Tenho interesse no plano Semestral da consultoria (R$ 247/mês)." href="#">Quero este plano</a>
       </article>
       <article class="plan plan--hl">
         <span class="tag">Menor valor mensal</span>
-        <p class="plan__name">Anual</p>
-        <p class="price"><small>R$</small>227<span>/mês</span></p>
+        <h3>Anual</h3>
+        <p class="price"><small>R$</small><b data-to="227">227</b><span>/mês</span></p>
         <p class="plan__note">Um ano inteiro de acompanhamento.</p>
-        <a class="btn" data-wa="Olá Gabriel! Tenho interesse no plano Anual da consultoria (R$ 227/mês)." href="#">Quero este plano</a>
+        <a class="btn magnetic" data-wa="Olá Gabriel! Tenho interesse no plano Anual da consultoria (R$ 227/mês)." href="#">Quero este plano</a>
       </article>
     </div>
 
-    <div class="team-plan reveal">
+    <div class="team-plan">
       <div>
-        <p class="plan__name">Consultoria Performance com Equipe Gabriel Teles</p>
+        <h3>Consultoria Performance com Equipe Gabriel Teles</h3>
         <p class="plan__note">Metodologia Gabriel Teles, com acompanhamento da equipe. Plano recorrente.</p>
       </div>
-      <p class="price price--sm"><small>R$</small>200<span>/mês</span></p>
-      <a class="btn btn--dark" data-wa="Olá Gabriel! Tenho interesse no plano com Equipe (R$ 200/mês)." href="#">Quero este plano</a>
+      <p class="price price--sm"><small>R$</small><b data-to="200">200</b><span>/mês</span></p>
+      <a class="btn btn--line" data-wa="Olá Gabriel! Tenho interesse no plano com Equipe (R$ 200/mês)." href="#">Quero este plano</a>
     </div>
 
-    <p class="pay reveal"><b>Pagamento via cartão, Pix ou boleto.</b> A cobrança é recorrente: todo mês é gerada automaticamente apenas uma parcela, sem comprometer o limite total do seu cartão e sem precisar pagar o valor integral via Pix ou cartão.</p>
+    <p class="pay"><b>Pagamento via cartão, Pix ou boleto.</b> A cobrança é recorrente: todo mês é gerada automaticamente apenas uma parcela, sem comprometer o limite total do seu cartão e sem precisar pagar o valor integral via Pix ou cartão.</p>
   </div>
 </section>
 
 <!-- FAQ -->
-<section class="sec" id="duvidas">
+<section class="sec sec--chalk" id="duvidas">
   <div class="wrap faq">
-    <div class="reveal">
-      <p class="eyebrow">Dúvidas frequentes</p>
-      <h2>Ficou alguma <em>pergunta?</em></h2>
-      <p class="muted">Se não achar aqui, é só chamar no WhatsApp.</p>
+    <div>
+      <h2 data-split>Dúvidas frequentes</h2>
+      <p class="muted">Se não achar a resposta aqui, é só chamar no WhatsApp.</p>
     </div>
-    <div class="reveal">
+    <div class="faq__list">
       <details>
         <summary>Como funciona o feedback?</summary>
-        <p>Os feedbacks são realizados semanalmente. As atualizações das fichas acontecem, em média, a cada 5 a 6 semanas, de acordo com o ciclo de treino e competições.</p>
+        <div class="ans"><p>Os feedbacks são realizados semanalmente. As atualizações das fichas acontecem, em média, a cada 5 a 6 semanas, de acordo com o ciclo de treino e competições.</p></div>
       </details>
       <details>
         <summary>Qual aplicativo utilizamos?</summary>
-        <p>Toda a consultoria funciona pelo aplicativo TeamBuildr, onde você tem acesso aos treinos, vídeos, organização e acompanhamento.</p>
+        <div class="ans"><p>Toda a consultoria funciona pelo aplicativo TeamBuildr, onde você tem acesso aos treinos, vídeos, organização e acompanhamento.</p></div>
       </details>
       <details>
         <summary>Quando recebo meu planejamento?</summary>
-        <p>O planejamento é enviado em até 4 dias úteis após a confirmação do pagamento.</p>
+        <div class="ans"><p>O planejamento é enviado em até 4 dias úteis após a confirmação do pagamento.</p></div>
       </details>
       <details>
         <summary>Existe multa no cancelamento?</summary>
-        <p>Não existe qualquer tipo de multa para cancelamento da consultoria.</p>
+        <div class="ans"><p>Não existe qualquer tipo de multa para cancelamento da consultoria.</p></div>
       </details>
       <details>
         <summary>O treino é individualizado?</summary>
-        <p>Sim. Todo o planejamento é montado de acordo com a sua rotina, objetivos, modalidade e nível físico.</p>
+        <div class="ans"><p>Sim. Todo o planejamento é montado de acordo com a sua rotina, objetivos, modalidade e nível físico.</p></div>
       </details>
     </div>
   </div>
@@ -289,10 +305,10 @@
 
 <!-- CTA FINAL -->
 <section class="final">
-  <div class="wrap reveal">
-    <h2>Pronto para treinar <em>com estratégia?</em></h2>
+  <div class="wrap">
+    <h2 data-split>Pronto para sair da zona de conforto?</h2>
     <p>Chame o Gabriel no WhatsApp e comece a sua consultoria.</p>
-    <a class="btn btn--dark btn--lg" data-wa="Olá Gabriel! Quero começar a consultoria online de performance." href="#">Falar no WhatsApp</a>
+    <a class="btn btn--dark btn--lg magnetic" data-wa="Olá Gabriel! Quero começar a consultoria online de performance." href="#">Falar no WhatsApp</a>
   </div>
 </section>
 
@@ -300,7 +316,7 @@
 
 <footer class="foot">
   <div class="wrap foot__in">
-    <p><b>GABRIEL TELES</b> · Força e Condicionamento · Preparador Físico · Triatleta</p>
+    <p><b>Gabriel Teles</b> · Força e condicionamento · Preparador físico · Triatleta</p>
     <p>Consultoria Online 2026</p>
   </div>
 </footer>
@@ -309,6 +325,9 @@
   <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.25-1.38A9.9 9.9 0 1 0 12.04 2Zm0 1.8a8.1 8.1 0 1 1-4.2 15.03l-.3-.18-3.1.82.83-3.02-.2-.31A8.1 8.1 0 0 1 12.04 3.8Zm-3.1 3.9c-.17 0-.45.06-.69.32-.24.26-.9.88-.9 2.15s.92 2.5 1.05 2.67c.13.17 1.8 2.88 4.45 3.92 2.2.87 2.65.7 3.13.65.48-.04 1.55-.63 1.77-1.24.22-.6.22-1.13.15-1.24-.06-.1-.24-.17-.5-.3-.27-.13-1.55-.77-1.8-.86-.24-.09-.41-.13-.59.13-.17.27-.68.86-.83 1.03-.15.18-.3.2-.57.07-.26-.13-1.1-.4-2.1-1.3-.77-.69-1.3-1.55-1.45-1.8-.15-.27-.02-.4.12-.54.12-.12.27-.31.4-.46.13-.16.17-.27.26-.44.09-.18.04-.33-.02-.46-.07-.13-.6-1.43-.82-1.96-.21-.51-.43-.44-.6-.45h-.5Z"/></svg>
 </a>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
